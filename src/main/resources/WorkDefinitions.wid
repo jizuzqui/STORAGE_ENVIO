@@ -1,0 +1,131 @@
+[
+  [
+     "name" : "BusinessRuleTask",
+     "parameters" : [
+       "Language" : new StringDataType(),
+       "KieSessionName" : new StringDataType(),
+       "KieSessionType" : new StringDataType()
+     ],
+     "displayName" : "Business Rule Task",
+     "icon" : "defaultbusinessrulesicon.png",
+     "category" : "Decision tasks"
+   ],
+
+   [
+     "name" : "DecisionTask",
+     "parameters" : [
+       "Language" : new StringDataType(),
+       "Namespace" : new StringDataType(),
+       "Model" : new StringDataType(),
+       "Decision" : new StringDataType()
+     ],
+     "displayName" : "Decision Task",
+     "icon" : "defaultdecisionicon.png",
+     "category" : "Decision tasks"
+   ],
+
+  [
+   "name":"ASOService",
+   "parameters":[
+     "EndPoint" : new StringDataType(),
+     "Path" : new StringDataType(),
+     "Method" : new StringDataType(),
+     "ContentType" : new StringDataType(),
+     "Data" : new ObjectDataType()
+   ],
+   "results":[
+      "Result":new ObjectDataType(),
+
+   ],
+   "displayName":"ASO Service",
+   "icon":"img.gif",
+   "category" : "BBVA services"
+  ],
+  [
+   "name":"UYServices",
+   "parameters":[
+     "EndPoint" : new StringDataType(),
+     "Path" : new StringDataType(),
+     "Method" : new StringDataType(),
+     "ContentType" : new StringDataType(),
+     "Data" : new ObjectDataType()
+   ],
+   "results":[
+      "Result":new ObjectDataType(),
+
+   ],
+   "displayName":"UYServices",
+   "icon":"img.gif",
+   "category" : "BBVA services"
+  ],
+  [
+   "name":"EtherService",
+   "parameters":[
+     "Method" : new StringDataType(),
+     "ContentType" : new StringDataType(),
+     "Service" : new StringDataType(),
+     "APIVersion" : new StringDataType(),
+     "ResourceLocator" : new StringDataType(),
+     "Action" : new StringDataType(),
+     "RequestBody" : new ObjectDataType(),
+     "ResultClass" : new StringDataType()
+   ],
+   "results":[
+      "Result":new ObjectDataType(),
+
+   ],
+   "displayName":"Ether Services",
+   "icon":"img.gif",
+   "category" : "BBVA services"
+  ],
+  [
+   "name":"ASKService",
+   "parameters":[
+     "businessId" : new StringDataType(),
+     "type" : new StringDataType(),
+     "message" : new StringDataType(),
+     "data" : new ObjectDataType(),
+     "results" : new ObjectDataType()
+   ],
+   "results":[
+      "Result":new ObjectDataType(),
+
+   ],
+   "displayName":"Ask-EVA Services",
+   "icon":"img.gif",
+   "category" : "BBVA services"
+  ],
+  [
+   "name":"SAYService",
+   "parameters":[
+     "businessId" : new StringDataType(),
+     "message" : new StringDataType(),
+     "data" : new ObjectDataType(),
+     "results" : new ObjectDataType()
+   ],
+   "results":[
+      "Result":new ObjectDataType(),
+
+   ],
+   "displayName":"Say-EVA Services",
+   "icon":"img.gif",
+   "category" : "BBVA services"
+  ],
+  [
+   "name":"GCPService",
+   "parameters":[
+     "Method" : new StringDataType(),
+     "ContentType" : new StringDataType(),
+     "Api" : new StringDataType(),
+     "Service" : new StringDataType(),
+     "RequestBody" : new ObjectDataType(),
+     "ResultClass" : new StringDataType()
+   ],
+   "results":[
+      "Result":new ObjectDataType(),
+   ],
+   "displayName":"GCP Services",
+   "icon":"img.gif",
+   "category" : "BBVA services"
+  ]
+]

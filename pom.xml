@@ -7,30 +7,24 @@
   <version>1.0.98</version>
   <packaging>kjar</packaging>
   <name>STORAGE_ENVIO</name>
-  <description></description>
+  <description>Envío de documentación sin digitalizar a archivo central.</description>
   <dependencies>
     <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-api</artifactId>
-      <version>7.33.0.Final</version>
-      <scope>provided</scope>
+      <groupId>com.thoughtworks.xstream</groupId>
+      <artifactId>xstream</artifactId>
+      <version>1.4.10</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-internal</artifactId>
-      <version>7.33.0.Final</version>
+      <version>7.14.0.Final-redhat-00002</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-core</artifactId>
-      <version>7.33.0.Final</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.optaplanner</groupId>
-      <artifactId>optaplanner-persistence-jaxb</artifactId>
-      <version>7.33.0.Final</version>
+      <version>7.14.0.Final-redhat-00002</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -40,10 +34,16 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.thoughtworks.xstream</groupId>
-      <artifactId>xstream</artifactId>
-      <version>1.4.10</version>
-      <scope>test</scope>
+      <groupId>org.optaplanner</groupId>
+      <artifactId>optaplanner-persistence-jaxb</artifactId>
+      <version>7.14.0.Final-redhat-00002</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>7.14.0.Final-redhat-00002</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <build>
@@ -51,8 +51,15 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>7.33.0.Final</version>
+        <version>7.14.0.Final-redhat-00002</version>
         <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
       </plugin>
     </plugins>
   </build>
